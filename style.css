@@ -219,7 +219,7 @@ body {
 /*Media Queries*/
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) and (min-width: 0px) {
 
     /*resizing header*/
     #flexBox {
@@ -337,117 +337,29 @@ body {
 @media only screen and (min-width: 600px) {}
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (max-width: 768px) {}
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
-    /*resizing header*/
     #flexBox {
         display: flex;
-        flex-direction: column;
-        margin-left: 10%;
+        flex-direction: row;
     }
 
     .hOne {
-        margin-left: 0;
-        margin-top: 5%;
-    }
-
-    .divTwo {
-        margin-left: 0;
-        margin-top: 0;
-    }
-
-    .divTwo i {
-        font-size: 12px;
-        opacity: .5;
+        margin-top: 50px;
+        line-height: 0;
+        margin-left: 20px;
     }
 
     .pOne {
-        margin-left: 0;
-        margin-bottom: 15%;
+        margin-left: 20px;
         color: rgb(8, 82, 255);
     }
 
-    .web a {
-        color: rgb(127, 123, 123);
-    }
-
-    /*resizing main content*/
-
-    #employmentSection {
-        display: flex;
-        flex-direction: column;
-
-    }
-
-    #employment {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-
-    }
-
-    .downLeftArrow {
-        background-color: rgb(35, 145, 72);
-        border-radius: 50%;
-        width: 50px;
-        height: 50px;
-        text-align: center;
-    }
-
-    .employer {
-        margin-left: 5px;
-        line-height: 0;
-    }
-
-    .employer p {
-        display: flex;
-        flex-grow: 2;
-        /*?*/
-        opacity: 0.5;
-    }
-
-    .timeWorked {
-        opacity: 0.5;
-    }
-
-    #educationSection {
-        display: flex;
-        flex-direction: column;
-        margin-top: 40px;
-    }
-
-    #edheading {
-        display: flex;
-        flex-direction: row;
-        align-items: self-start;
-        gap: 10px;
-        background-color: rgb(127, 95, 95);
-        height: 50px;
-        font-weight: 200;
-    }
-
-    .edDownArrow {
-        background-color: rgb(8, 146, 173);
-        width: 50px;
-        height: 50px;
-        text-align: center;
-        font-size: 30px;
-        font-weight: bolder;
-        border-radius: 3px;
-    }
-
-    #mainSection {
-        width: 100%;
-        margin-left: 10%;
-    }
-
-    #sectionBar {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+    .divTwo {
+        margin-top: -170px;
+        margin-left: 70%;
     }
 }
 
