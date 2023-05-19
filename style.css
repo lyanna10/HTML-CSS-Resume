@@ -1,0 +1,455 @@
+html {
+    background-color: black;
+}
+
+body {
+    background-color: rgb(64, 48, 55);
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 0;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#flexBox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#card {
+    width: 20%;
+    height: 15%;
+}
+
+.hOne {
+    margin-left: 140px;
+    margin-top: 50px;
+    line-height: 0;
+}
+
+.divTwo {
+    margin-left: 250px;
+    margin-top: 40px;
+}
+
+.divTwo i {
+    font-size: 12px;
+    opacity: .5;
+}
+
+.pOne {
+    margin-left: 140px;
+    color: rgb(8, 82, 255);
+}
+
+.web a {
+    color: rgb(127, 123, 123);
+}
+
+
+#employmentSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#heading {
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    gap: 10px;
+    background-color: rgb(127, 95, 95);
+    height: 50px;
+    font-weight: 200;
+}
+
+.downArrow {
+    background-color: rgb(8, 146, 173);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 3px;
+}
+
+#employment {
+    display: flex;
+    flex-direction: column;
+}
+
+#employedInfo {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.downLeftArrow {
+    background-color: rgb(35, 145, 72);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.employer {
+    flex-grow: 2;
+    margin-left: 5px;
+    line-height: 0;
+}
+
+.employer p {
+    opacity: 0.5;
+}
+
+.timeWorked {
+    opacity: 0.5;
+}
+
+#educationSection {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+#edheading {
+    display: flex;
+    flex-direction: row;
+    align-items: self-start;
+    gap: 10px;
+    background-color: rgb(127, 95, 95);
+    height: 50px;
+    font-weight: 200;
+}
+
+.edDownArrow {
+    background-color: rgb(8, 146, 173);
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    border-radius: 3px;
+}
+
+#mainSections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+#mainSection {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    flex-grow: 2;
+    margin-left: 2%;
+    margin-right: 5%;
+}
+
+
+#sectionBar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
+
+.divBar {
+    padding-top: 5%;
+}
+
+#progressBar {
+    background-color: rgb(109, 106, 106);
+    border-radius: 13px;
+    width: 100%;
+}
+
+#progressBar>div {
+    background-color: rgb(22, 171, 220);
+    width: 90%;
+    border-radius: 10px;
+    text-align: end;
+}
+
+#progressBar .css {
+    background-color: green;
+    width: 80%;
+}
+
+#progressBar .js {
+    background-color: rgb(255, 47, 0);
+    width: 65%;
+}
+
+
+#label>div {
+    border: 1px solid grey;
+    float: right;
+    width: 15%;
+    border-radius: 50%;
+    padding: 12px 0 12px 0;
+}
+
+
+.labelOne>div {
+    background-color: aqua;
+}
+
+.labelTwo>div {
+    background-color: blueviolet;
+}
+
+.labelThree>div {
+    background-color: beige;
+}
+
+.labelThree .none {
+    background-color: transparent;
+}
+
+
+/*Media Queries*/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /*resizing header*/
+    #flexBox {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #card {
+        display: none;
+    }
+
+    .hOne {
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    .divTwo {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .divTwo i {
+        font-size: 12px;
+        opacity: .5;
+    }
+
+    .pOne {
+        margin-left: 0;
+        margin-bottom: 15%;
+        color: rgb(8, 82, 255);
+    }
+
+    .web a {
+        color: rgb(127, 123, 123);
+    }
+
+    /*resizing main content*/
+
+    #employmentSection {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #employment {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .downLeftArrow {
+        background-color: rgb(35, 145, 72);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+
+    .employer {
+        margin-left: 5px;
+        line-height: 0;
+    }
+
+    .employer p {
+        display: flex;
+        flex-grow: 2;
+        /*?*/
+        opacity: 0.5;
+    }
+
+    .timeWorked {
+        opacity: 0.5;
+    }
+
+    #educationSection {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    #edheading {
+        display: flex;
+        flex-direction: row;
+        align-items: self-start;
+        gap: 10px;
+        background-color: rgb(127, 95, 95);
+        height: 50px;
+        font-weight: 200;
+    }
+
+    .edDownArrow {
+        background-color: rgb(8, 146, 173);
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        border-radius: 3px;
+    }
+
+    #mainSection {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    #sectionBar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+    /*resizing header*/
+    #flexBox {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+
+    .hOne {
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    .divTwo {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .divTwo i {
+        font-size: 12px;
+        opacity: .5;
+    }
+
+    .pOne {
+        margin-left: 0;
+        margin-bottom: 15%;
+        color: rgb(8, 82, 255);
+    }
+
+    .web a {
+        color: rgb(127, 123, 123);
+    }
+
+    /*resizing main content*/
+
+    #employmentSection {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #employment {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .downLeftArrow {
+        background-color: rgb(35, 145, 72);
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+    }
+
+    .employer {
+        margin-left: 5px;
+        line-height: 0;
+    }
+
+    .employer p {
+        display: flex;
+        flex-grow: 2;
+        /*?*/
+        opacity: 0.5;
+    }
+
+    .timeWorked {
+        opacity: 0.5;
+    }
+
+    #educationSection {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    #edheading {
+        display: flex;
+        flex-direction: row;
+        align-items: self-start;
+        gap: 10px;
+        background-color: rgb(127, 95, 95);
+        height: 50px;
+        font-weight: 200;
+    }
+
+    .edDownArrow {
+        background-color: rgb(8, 146, 173);
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        border-radius: 3px;
+    }
+
+    #mainSection {
+        width: 100%;
+        margin-left: 10%;
+    }
+
+    #sectionBar {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}
